@@ -111,14 +111,19 @@ p {
    .grid-container {
         height: 100%;
         display: block;
-        grid-template-columns: repeat(12, 1fr);
     }
     
     .grid-picture {
         background-color: #fff;
         text-align: center;
-        grid-column: span 12;
         height: 50%;
+    }
+
+    .main-picture {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
     }
 
     .grid-info {
