@@ -8,6 +8,8 @@
     src: url(../assets/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -130,7 +132,7 @@ p {
     }
     .picture-gradient {
         position: absolute;
-        top: 30vh;
+        top: 30%;
         right: 0;
         height: 20%;
         width: 100%;
