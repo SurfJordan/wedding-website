@@ -30,7 +30,6 @@ p {
 
 .grid-picture {
     background-color: #fff;
-    font-size: 30px;
     text-align: center;
     grid-column: span 7;
     height: 100vh;
@@ -116,7 +115,6 @@ p {
     
     .grid-picture {
         background-color: #fff;
-        font-size: 30px;
         text-align: center;
         grid-column: span 12;
         height: 50vh;
@@ -127,7 +125,7 @@ p {
         font-size: 30px;
         text-align: center;
         grid-column: span 12;
-        height: 100vh;
+        height: 50vh;
         overflow: hidden;
     }
     .picture-gradient {
