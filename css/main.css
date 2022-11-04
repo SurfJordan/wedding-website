@@ -108,6 +108,13 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
    .grid-container {
         height: 100%;
         display: block;
