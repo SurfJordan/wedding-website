@@ -1,0 +1,107 @@
+@font-face {
+    font-family: handwriting;
+    src: url(../assets/GustatoryDelightRegular-rgX3L.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(../assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+p {
+    z-index: 4;
+    position: relative;
+    color: rgb(0, 24, 77);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-picture {
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+    grid-column: span 7;
+    height: 100vh;
+}
+
+.grid-info {
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+    grid-column: span 5;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.picture-gradient {
+    position: absolute;
+    top: 0;
+    right: 41.6666666667%;
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(to left, #fff, rgb(255, 255, 255, 0));
+}
+
+.beach-image {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 20%;
+    right: -5%;
+    transform: rotate(254deg);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.center-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    z-index: 4;
+}
+
+.save-text {
+    position: relative;
+    font-family: handwriting;
+    font-size: 90px;
+    font-weight: 500;
+    color: #DAA520;
+    z-index: 2;
+    line-height: 80px;
+    margin-top: -40px;
+}
+
+.names {
+    position: relative;
+    font-family: playfair;
+    font-size: 40px;
+    z-index: 2;
+    margin-top: -10px;
+}
+
+.date-location {
+    position: relative;
+    font-family: playfair;
+    font-size: 20px;
+    z-index: 2;
+    margin-top: -10px;
+}
