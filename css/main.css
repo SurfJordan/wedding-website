@@ -109,7 +109,8 @@ p {
 
 @media only screen and (max-width: 768px) {
    .grid-container {
-        display: grid;
+        height: 100%;
+        display: block;
         grid-template-columns: repeat(12, 1fr);
     }
     
@@ -117,20 +118,20 @@ p {
         background-color: #fff;
         text-align: center;
         grid-column: span 12;
-        height: 50vh;
+        height: 50%;
     }
-    
+
     .grid-info {
         background-color: #fff;
         font-size: 30px;
         text-align: center;
         grid-column: span 12;
-        height: 50vh;
+        height: 50%;
         overflow: hidden;
     }
     .picture-gradient {
         position: absolute;
-        top: 30vh;
+        top: 30.1%;
         right:0;
         height: 20%;
         width: 100%;
