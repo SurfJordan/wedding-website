@@ -270,7 +270,7 @@ a {
     }
 
     .landing {
-        background-size: 200vw 50vmax;
+        background-size: 200vw 45vmax;
     }
     
     .love-bar {
@@ -370,5 +370,9 @@ a {
 
     .question-title {
         line-height: 24px;
+    }
+
+    .landing-info {
+        transform: translate(-50%, -10%);
     }
 }
