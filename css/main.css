@@ -8,11 +8,12 @@
     src: url(../assets/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-html, body {margin: 0; height: 100%; overflow: hidden}
+html,
+body {
+    margin: 0;
+}
 
 body {
-    height: 100vh;
-    width: 100vw;
     background-color: #fff;
     overflow: hidden;
 }
@@ -21,6 +22,100 @@ p {
     z-index: 4;
     position: relative;
     color: rgb(0, 24, 77);
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/header-flowers.png");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: top;
+    background-size: 100vw 35vmax;
+}
+
+.love-bar {
+    height: 30vh;
+    width: 100vw;
+    background-image: url("../assets/main.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: center;
+    background-size: 100vw 120vh;
+}
+
+.surf-bar {
+    height: 30vh;
+    width: 100vw;
+    background-image: url("../assets/surf.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: 0% 68%;
+    background-size: 100vw 130vh;
+}
+
+.hotel-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.faq-wrapper {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+.wooltower-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hotel-image {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hotel-text {
+    position: relative;
+    font-family: playfair;
+    font-size: 20px;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.map-bar {
+    height: 30vh;
+    width: 100vw;
+}
+
+.location {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.accommodation {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.faqs {
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .grid-container {
@@ -80,6 +175,18 @@ p {
     z-index: 4;
 }
 
+.landing-info {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
 .save-text {
     position: relative;
     font-family: handwriting;
@@ -99,12 +206,59 @@ p {
     margin-top: -60px !important;
 }
 
+.location-title {
+    position: relative;
+    font-family: playfair;
+    font-size: 40px;
+    z-index: 2;
+    margin-top: 10px !important;
+}
+
+.question-wrapper {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.question-row {
+    display: block;
+}
+
+.question-title {
+    position: relative;
+    font-family: playfair;
+    font-size: 26px;
+    z-index: 2;
+    margin-top: 10px !important;
+    line-height: 10px;
+}
+
+.question-answer {
+    position: relative;
+    font-family: playfair;
+    font-size: 18px;
+    z-index: 2;
+    margin-top: 0px !important;
+}
+
 .date-location {
     position: relative;
     font-family: playfair;
     font-size: 20px;
     z-index: 2;
     margin-top: -40px;
+}
+
+.button {
+    background-color: rgb(0, 24, 77);
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: playfair;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,11 +269,23 @@ p {
         overflow: hidden;
     }
 
-   .grid-container {
+    .landing {
+        background-size: 200vw 50vmax;
+    }
+    
+    .love-bar {
+        background-size: 200vw 80vh;
+    }
+    
+    .surf-bar {
+        background-size: 110vw 43vh;
+    }
+
+    .grid-container {
         height: 100%;
         display: block;
     }
-    
+
     .grid-picture {
         background-color: #fff;
         text-align: center;
@@ -143,10 +309,11 @@ p {
         overflow: hidden;
         z-index: 10;
     }
+
     .picture-gradient {
         position: absolute;
         top: 30.1%;
-        right:0;
+        right: 0;
         height: 20%;
         width: 100%;
         background-image: linear-gradient(to top, #fff, rgb(255, 255, 255, 0));
@@ -181,7 +348,7 @@ p {
         color: #DAA520;
         z-index: 2;
         line-height: 80px;
-        margin-top: -40px;
+        margin-top: 20px !important;
     }
 
     .names {
@@ -191,4 +358,17 @@ p {
         z-index: 2;
         margin-top: -70px !important;
     }
- }
+
+    .hotel-wrapper {
+        display: block;
+    }
+
+    .faq-wrapper {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .question-title {
+        line-height: 24px;
+    }
+}
